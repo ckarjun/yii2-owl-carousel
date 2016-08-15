@@ -42,10 +42,17 @@ class OwlCarouselWidget extends \yii\base\Widget
      * Initializes the widget.
      *
      */
-    public function init() {
+    public function init() 
+    {
         parent::init();
         if (!isset($this->container)):
             $this->container = 'div';
+        endif;
+        if (!is_array($this->containerOptions)):
+            $this->containerOptions = [];
+        endif;
+        if (!is_array($this->pluginOptions)):
+            $this->pluginOptions = [];
         endif;
         $this->initOptions();
         ob_start();
@@ -54,18 +61,21 @@ class OwlCarouselWidget extends \yii\base\Widget
     /**
      * Intialises the plugin options
      */
-    protected function initOptions() {
+    protected function initOptions() 
+    {
         $this->containerOptions = array_merge([
             'id' => $this->getId()
         ],$this->containerOptions);
         Html::addCssClass($this->containerOptions, 'owl-carousel');
     }
+    
     /**
      * Registers the needed assets.
      *
      * @param View $view The View object
      */
-    public function registerAssets($view) {
+    public function registerAssets($view) 
+    {
         OwlCarouselAsset::register($view);
         $js = 'jQuery("#' . $this->containerOptions['id'] . '").owlCarousel('. "\n";
         $js .= json_encode($this->pluginOptions)."\n";
@@ -77,7 +87,8 @@ class OwlCarouselWidget extends \yii\base\Widget
      * Executes the widget.
      * @return string the result of widget execution to be outputted.
      */
-    public function run() {
+    public function run() 
+    {
         $content = ob_get_clean();
         $view = $this->getView();
         $this->registerAssets($view);
