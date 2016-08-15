@@ -1,6 +1,6 @@
 {
     "name": "ckarjun/yii2-owl-carousel",
-    "description": "A wrapper for oul carousel",
+    "description": "A Yii2 wrapper for owl carousel",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","carousel","owlcarousel"],
     "license": "MIT",
