@@ -51,4 +51,4 @@ OwlCarouselWidget::begin([
 <div class="my-item-class"><img src="my-image-4" alt="My Image"></div>
 
 
-OwlCarouselWidget::end();```
+OwlCarouselWidget::end();
