@@ -43,12 +43,12 @@ OwlCarouselWidget::begin([
         'itemsDesktop' => [1199,3],
         'itemsDesktopSmall' => [979,3]
     ]
-]);```
+]);
 
 <div class="my-item-class"><img src="my-image-1" alt="My Image"></div>
 <div class="my-item-class"><img src="my-image-2" alt="My Image"></div>
 <div class="my-item-class"><img src="my-image-3" alt="My Image"></div>
 <div class="my-item-class"><img src="my-image-4" alt="My Image"></div>
 
-```php
+
 OwlCarouselWidget::end();```
