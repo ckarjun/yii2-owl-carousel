@@ -1,7 +1,7 @@
-yii2-owl-carousel widget
+Owl Carousel Widget
 ============================
 
-The OwlCarouselWidget is a Yii2 wrapper for the [owl carousel Plugin] (http://owlgraphic.com/owlcarousel/)
+The OwlCarouselWidget is a Yii2 wrapper for the [Owl Carousel] (http://owlgraphic.com/owlcarousel/)
 
 Installation
 ------------
